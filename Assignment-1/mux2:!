@@ -1,0 +1,10 @@
+module mux2to1 (
+    input A,       // Input A
+    input B,       // Input B
+    input sel,     // Selector signal
+    output out     // Output
+);
+
+    assign out = (sel) ? B : A;  // If sel is 1, out = B; else out = A.
+
+endmodule
